@@ -1,0 +1,278 @@
+@import url('./reset.css');
+
+/*CABECALHO*/
+header {
+  background-color: var(--bgColor);
+  width: 100vw;
+  padding: 15px 5%;
+  position: fixed;
+}
+
+header .interface {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+header .trim h1 {
+  cursor: default;
+}
+
+header .desktop ul {
+  display: flex;
+  gap: 50px;
+}
+
+header .desktop ul li {
+  transition: 0.3s;
+}
+
+header .desktop ul li:hover {
+  transform: scale(1.05);
+}
+
+header .desktop ul li a {
+  font-size: 20px;
+  color: var(--shadowColor);
+  transition: 0.3s;
+}
+
+header .desktop ul li a:hover {
+  color: var(--foreColor);
+}
+
+header .btn-pdf button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: var(--foreShadowColor);
+  transition: 0.3s;
+}
+
+header .btn-pdf button:hover {
+  transform: scale(1.05);
+  background-color: var(--foreColor);
+  box-shadow: 0px 0px 8px var(--shadowColor);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*TOPO INDEX*/
+section.topo {
+  padding: 300px 150px 50px 150px;
+}
+
+section.topo .interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.topo .txt-topo {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.topo .txt-topo p {
+  font-size: 25px;
+  color: var(--foreShadowColor);
+  margin-bottom: 50px;
+}
+
+.topo .btn-curriculo button {
+  width: 300px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--foreShadowColor);
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.topo .btn-curriculo button:hover {
+  transform: scale(1.10);
+  background-color: var(--foreColor);
+  box-shadow: 0px 0px 8px var(--shadowColor);
+  cursor: pointer;
+}
+
+/*CURRICULO*/
+.main {
+  background-color: var(--foreColor);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.curriculo {
+  background-color: var(--bgColor);
+  padding: 20px;
+  width: 80vw;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px var(--bgShadowColor);
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.topo-curriculo {
+  border-bottom: 2px solid var(--foreColor);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.topo-curriculo__center {
+  text-align: center;
+}
+
+.topo-curriculo__between {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.about-curriculo {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  border-bottom: 1px solid var(--foreColor);
+}
+
+.about-curriculo .linksAbout-curriculo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.about-curriculo .linksAbout-curriculo h2,
+.profileAbout-curriculo h2,
+.education-curriculo h2,
+.skills-curriculo h2,
+.hobbies-curriculo h2 {
+  width: 60vw;
+  background-color: var(--bgH2Color);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.about-curriculo .linksAbout-curriculo a {
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.about-curriculo .profileAbout-curriculo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-curriculo .profileAbout-curriculo p {
+  font-size: 18px;
+  text-align: justify;
+  padding: 0px 15px;
+}
+
+/*FORMACAO ACADEMICA*/
+
+.education-curriculo h2,
+.skills-curriculo h2,
+.hobbies-curriculo h2 {
+  margin: 20px 0;
+}
+
+.education-curriculo .educationSummary-curriculo {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+.education-curriculo .educationSummary-curriculo .summaryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 1px dashed var(--shadowColor);
+}
+
+.education-curriculo .educationSummary-curriculo .itemDetails h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.education-curriculo .educationSummary-curriculo .itemDetails p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.education-curriculo .educationSummary-curriculo .itemDates {
+  text-align: right;
+}
+
+.education-curriculo .educationSummary-curriculo .itemDates span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.education-curriculo .educationSummary-curriculo .itemDates p {
+  font-size: 14px;
+  margin-top: 5px;
+  color: var(--shadowColor);
+}
+
+/*SKILLS*/
+.skills-curriculo .skills {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+.skills-curriculo .skills .skillsColumn {
+  width: 45%;
+}
+
+.skills-curriculo .skills .skillsColumn .skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  position: relative;
+}
+
+.skills-curriculo .skills .skillsColumn .skill span.dots::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: repeating-linear-gradient(to right, white 0, 2px, transparent 2px, transparent 5px);
+  margin: 0px 10px;
+}
+
+.skills-curriculo .skills .skillsColumn .skill span.dots {
+  flex-grow: 1;
+  position: relative;
+  top: -3px;
+}
+
+/*HOBBIES*/
+.hobbies-curriculo p {
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.hobbies-curriculo p a {
+  text-decoration: underline;
+}
